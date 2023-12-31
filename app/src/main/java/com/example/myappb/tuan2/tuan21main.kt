@@ -8,18 +8,18 @@ import android.widget.EditText
 import android.widget.TextView
 import com.example.myappb.R
 
-class MainActivityTuan2 : AppCompatActivity() {
+class tuan21main : AppCompatActivity() {
     var ad1:EditText?=null
     var ad2:EditText?=null
     var button:Button?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_tuan2)
-       ad1=findViewById(R.id.ed1)
+        setContentView(R.layout.activity_tuan21main)
+        ad1=findViewById(R.id.ed1)
         ad2=findViewById(R.id.ed2)
         button=findViewById(R.id.button)
         button!!.setOnClickListener({
-            val i = Intent(this,MainActivity::class.java)
+            val i = Intent(this,tuan21::class.java)
             i.putExtra("ad1",ad1!!.text!!.toString())
             i.putExtra("ad2",ad2!!.text.toString())
             startActivity(i)
